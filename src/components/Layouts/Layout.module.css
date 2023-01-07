@@ -1,0 +1,25 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    " main";
+}
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+@media (min-width: 43rem) {
+  .layout {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "navbar header"
+      "navbar main";
+  }
+
+  .navbar {
+    grid-area: navbar;
+  }
+}
