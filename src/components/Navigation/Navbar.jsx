@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Logo } from "../Layouts/Logo";
 import { useDispatch } from "react-redux";
 import { UIAction } from "../../store/redux-slices/UI-slice";
+import { SocialIcons } from "../Layouts/SocialIcons";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-primary-color text-white text-xl py-3 font-Montserrat h-fit w-fit border border-white  ${customStyles.navbar} absolute top-[90px] left-[5%] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8 sm:h-full sm:space-y-8 sm:border-none`}
+      className={`bg-primary-color text-white text-xl py-3 font-Montserrat h-fit w-fit border border-white  ${customStyles.navbar} z-50 absolute top-[90px] left-[5%] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
     >
       <div className="hidden sm:flex justify-center ">
         <Logo />
@@ -48,6 +49,9 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+      <div className="hidden sm:flex mx-auto mt-auto w-fit">
+        <SocialIcons />
+      </div>
     </nav>
   );
 };

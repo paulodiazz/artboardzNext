@@ -5,10 +5,11 @@ import Header from "./Header";
 import { useSelector } from "react-redux";
 import { navbarState } from "../../store/redux-slices/UI-slice";
 import Navbar from "../Navigation/Navbar";
+import { SocialIcons } from "./SocialIcons";
 
 const Layout = ({ children }) => {
   const navBarState = useSelector(navbarState);
-  const isNavShown = window.innerWidth > 680 ? true : navBarState;
+  const isNavShown = window.innerWidth > 640 ? true : navBarState;
 
   return (
     <div
@@ -17,9 +18,18 @@ const Layout = ({ children }) => {
       <Header />
       {isNavShown && <Navbar />}
       <main
-        className={`bg-light-purple  min-h-full ${customStyles.main} overflow-y-auto`}
+        className={`bg-primary-purple  min-h-full ${customStyles.main} overflow-y-auto sm:bg-transparent`}
       >
+        {/* <div
+          className={`${customStyles.backdrop} w-full h-full absolute top-0 left-0`}
+        ></div> */}
         {children}
+        <div className="w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
+          <SocialIcons />
+          <div>
+            <p className="text-white font-Montserrat">Pool ID: d19db...44</p>
+          </div>
+        </div>
       </main>
     </div>
   );

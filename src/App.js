@@ -1,15 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layouts/Layout";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
       <Layout>
         <Routes>
-          <Route
-            path="/"
-            element={<h1 className="text-5xl text-white">Hell0</h1>}
-          />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Layout>
     </>
