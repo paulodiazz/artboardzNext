@@ -34,12 +34,12 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/New-Releases" className={activeNavLinkHandler}>
+          <NavLink to="/new-Releases" className={activeNavLinkHandler}>
             New Releases
           </NavLink>
         </li>
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/Artsboardz" className={activeNavLinkHandler}>
+          <NavLink to="/artboardz" className={activeNavLinkHandler}>
             Artsboardz
           </NavLink>
         </li>

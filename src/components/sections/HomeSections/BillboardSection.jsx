@@ -28,7 +28,7 @@ const BillboardSection = () => {
 
         <div className="">
           <iframe
-            className="max-w-full sm:w-[560px] aspect-video mx-auto"
+            className="max-w-full w-full sm:w-[560px] aspect-video  mx-auto"
             src="https://www.youtube.com/embed/pPVyCC7sbyM"
             title="YouTube video player"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

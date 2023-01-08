@@ -14,6 +14,10 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
       },
+      gridTemplateColumns: {
+        search: "auto 1fr auto",
+        leaderItem: "auto auto 1fr",
+      },
     },
   },
   plugins: [],

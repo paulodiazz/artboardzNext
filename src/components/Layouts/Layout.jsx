@@ -18,11 +18,11 @@ const Layout = ({ children }) => {
       <Header />
       {isNavShown && <Navbar />}
       <main
-        className={`bg-primary-purple  min-h-full ${customStyles.main} overflow-y-auto sm:bg-transparent`}
+        className={`bg-primary-purple  min-h-full ${customStyles.main} overflow-y-auto sm:bg-transparent flex flex-col`}
       >
-        {/* <div
-          className={`${customStyles.backdrop} w-full h-full absolute top-0 left-0`}
-        ></div> */}
+        <div
+          className={`${customStyles.backdrop} w-1/3 h-full absolute top-0 left-1/2`}
+        ></div>
         {children}
         <div className="w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
           <SocialIcons />

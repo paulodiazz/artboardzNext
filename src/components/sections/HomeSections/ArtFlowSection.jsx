@@ -55,7 +55,7 @@ const ArtFlowSection = () => {
                 alt=""
                 className="w-8/12 mx-auto aspect-square object-cover rounded-full"
               />
-              <p className="text-lg md:text-xl">{info.description}</p>
+              <p className="text-xl">{info.description}</p>
             </div>
           );
         })}
