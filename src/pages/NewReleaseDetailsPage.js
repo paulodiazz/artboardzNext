@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import releaseImg from "../components/assests/images/new_release.png";
 import NewReleaseDetails from "../components/New Release/NewReleaseDetails";
 
@@ -30,7 +30,9 @@ const DUMMY_DETAILS = {
 };
 
 const NewReleaseDetailsPage = () => {
-  //   const { releaseItemId } = useParams();
+  useEffect(() => {
+    document.querySelector("#main-layout").scrollTop = 0;
+  }, []);
 
   return (
     <>

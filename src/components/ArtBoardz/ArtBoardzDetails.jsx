@@ -16,7 +16,7 @@ const ArtBoardzDetails = ({
       <div className="py-6">
         <NewReleaseImage image={image} />
         <div className="max-w-md mx-auto">
-          <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base tracking-wide">
+          <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
             <div className=" p-2 border rounded-lg border-light-purple text-center">
               <p>Floor</p>
               <p className="font-semibold">100</p>
@@ -47,9 +47,8 @@ const ArtBoardzDetails = ({
       </div>
       {moreInfo.map((info, index) => {
         return (
-          <div className="py-6">
+          <div key={index} className="py-6">
             <DetailsCard
-              key={index}
               image={info.image}
               title={info.title}
               desc={info.desc}

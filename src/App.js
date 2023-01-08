@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layouts/Layout";
 import ArtBoardzDetailsPage from "./pages/ArtBoardzDetailsPage";
 import ArtBoardzPage from "./pages/ArtBoardzPage";
@@ -13,7 +13,8 @@ function App() {
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/new-releases" element={<NewRelease />} />
           <Route
             path="/new-releases/:releaseItemId"

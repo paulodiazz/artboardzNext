@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ArtBoardzDetails from "../components/ArtBoardz/ArtBoardzDetails";
 import releaseImg from "../components/assests/images/new_release.png";
 
@@ -42,6 +42,10 @@ const DUMMY_DETAILS = {
 };
 
 const ArtBoardzDetailsPage = () => {
+  useEffect(() => {
+    document.querySelector("#main-layout").scrollTop = 0;
+  }, []);
+
   return (
     <>
       <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">

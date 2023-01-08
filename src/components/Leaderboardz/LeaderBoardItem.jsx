@@ -25,7 +25,7 @@ const LeaderboardItem = ({ position, image, name, amount }) => {
     <li className="flex gap-3 justify-between text-white items-center font-Montserrat tracking-wide text-base font-semibold">
       <div className="grid grid-cols-leaderItem place-items-center gap-[10px]  py-2">
         <div className="w-[40px] text-center">{pos}</div>
-        <div className="w-[48px]">
+        <div className="w-[48px] h-[48px] rounded-full border border-white">
           <Avatar image={image} username={name} />
         </div>
         <p className=" ">{name}</p>

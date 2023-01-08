@@ -29,7 +29,7 @@ const Navbar = () => {
 
       <ul className=" space-y-4">
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/" className={activeNavLinkHandler}>
+          <NavLink to="/home" className={activeNavLinkHandler}>
             Home
           </NavLink>
         </li>

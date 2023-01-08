@@ -10,7 +10,7 @@ const ArtBoardzInfo = ({ art, location, artist, listing }) => {
 
       <div className="flex gap-1 items-center justify-between">
         <p className="text-sm"> by {artist}</p>
-        <p className="text-sm">{`${location.city},${location.country}`}</p>
+        <p className="text-sm text-right">{`${location.city},${location.country}`}</p>
       </div>
     </div>
   );
