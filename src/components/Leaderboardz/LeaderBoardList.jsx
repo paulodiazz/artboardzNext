@@ -5,32 +5,32 @@ import photo from "../assests/images/ProfilePhoto.png";
 const DUMMY_LEADERS = [
   {
     image: photo,
-    name: "Fridge scnmc cdjkfv cvnjkdx bkdscjk ",
+    name: "Edmund scnmc cdjkfv cvnjkdx bkdscjk ",
     amount: 20,
   },
   {
     image: photo,
-    name: "Fridge Arinze",
+    name: "Edmund Arinze",
     amount: 20,
   },
   {
     image: photo,
-    name: "Fridge",
+    name: "Edmund",
     amount: 20,
   },
   {
     image: photo,
-    name: "Fridge",
+    name: "Edmund",
     amount: 20,
   },
   {
     image: photo,
-    name: "Fridge",
+    name: "Edmund",
     amount: 20,
   },
   {
     image: photo,
-    name: "Fridge",
+    name: "Edmund",
     amount: 20,
   },
 ];
