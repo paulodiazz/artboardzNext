@@ -40,9 +40,11 @@ const LeaderBoardList = () => {
     <ul className="bg-primary-color p-4 grid gap-3 rounded-lg">
       {DUMMY_LEADERS.map((leader, index) => {
         return (
-          <div className="border-b border-white last-of-type:border-none">
+          <div
+            key={index}
+            className="border-b border-white last-of-type:border-none"
+          >
             <LeaderboardItem
-              key={index}
               position={index + 1}
               image={leader.image}
               name={leader.name}
