@@ -6,7 +6,7 @@ import UserArtboardzList from "../../User/UserArtboardzList";
 const DUMMY_USER = {
   image:
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFFG-hAuwWCF1wpo8rDXVEfoFI4_MTg0V8Q&usqp=CAU",
-  username: "Cyril Arinze ",
+  username: "Edmund E. M ",
   location: { city: "Lagos", country: "Nigeria" },
 };
 
