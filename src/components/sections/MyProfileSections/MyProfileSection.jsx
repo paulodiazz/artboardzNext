@@ -1,6 +1,5 @@
 import React from "react";
 import MainProfile from "../../User/MainProfile";
-import NewReleaseList from "../../New Release/NewReleaseList";
 import { DUMMY_RELEASES } from "../NewReleaseSections/NewReleaseSection";
 import UserArtboardzList from "../../User/UserArtboardzList";
 
@@ -13,7 +12,7 @@ const DUMMY_USER = {
 
 const MyProfileSection = () => {
   return (
-    <section className=" text-white font-Montserrat">
+    <section className=" text-white font-Montserrat relative">
       <MainProfile
         image={DUMMY_USER.image}
         username={DUMMY_USER.username}
