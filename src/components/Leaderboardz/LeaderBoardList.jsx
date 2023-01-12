@@ -10,7 +10,7 @@ const DUMMY_LEADERS = [
   },
   {
     image: photo,
-    name: "Edmund Arinze",
+    name: "Edmund Moses",
     amount: 20,
   },
   {
