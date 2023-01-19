@@ -1,6 +1,8 @@
 import { DetailsCard } from "../New Release/DetailsCard";
 import NewReleaseImage from "../New Release/NewReleaseImage";
 import NewReleaseInfo from "../New Release/NewReleaseInfo";
+import { PatronsCard } from "../New Release/PatronsCard";
+import useCollapse from 'react-collapsed'
 
 const ArtBoardzDetails = ({
   image,
@@ -9,8 +11,11 @@ const ArtBoardzDetails = ({
   artist,
   links,
   artDesc,
+  patrons,
   moreInfo,
 }) => {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+
   return (
     <section className="p-4 text-white font-Montserrat">
       <div className="py-6">
@@ -45,6 +50,46 @@ const ArtBoardzDetails = ({
           artDesc={artDesc}
         />
       </div>
+      {/* Patrons */}
+      {patrons.title && (
+        <h2 className="text-2xl md:text-3xl font-medium pb-3">{patrons.title}</h2>
+      )}
+      <div style={{ backgroundColor: '#011335' }}>
+        <div className="flex justify-between">
+          {patrons.patron.slice(0, 4).map((info, index) => {
+            return(
+                <div className="xs:w-full md:w-1/4" key={index}>
+                  <PatronsCard 
+                    image={info.image}
+                    name={info.name}
+                    twitter={info.twitter}
+                    country={info.country}
+                    assets={info.assets}
+                  />
+                </div>
+            );
+          })}
+        </div>
+        <div className="flex justify-between" {...getCollapseProps()}>
+          {patrons.patron.slice(4).map((info, index) => {
+            return(
+                <div className="xs:w-full md:w-1/4" key={index}>
+                  <PatronsCard 
+                    image={info.image}
+                    name={info.name}
+                    twitter={info.twitter}
+                    country={info.country}
+                    assets={info.assets}
+                  />
+                </div>
+            );
+          })}
+        </div>
+        <p className="text-center" {...getToggleProps()}>
+            {isExpanded ? 'Collapse' : 'Expand'}
+        </p>
+      </div>
+
       {moreInfo.map((info, index) => {
         return (
           <div key={index} className="py-6">

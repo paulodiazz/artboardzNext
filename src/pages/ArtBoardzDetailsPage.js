@@ -11,11 +11,68 @@ const DUMMY_DETAILS = {
   artDesc:
     "Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up a red ochre mineral into fine powder. They would then put it in their mouth and spray it over their hands and onto the rock face which would create a hand print. This made them the original graffiti artists. ",
 
+  patrons: {
+    title: "Patrons",
+    patron: [
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "The Art Guy",
+        twitter: "twitter.com",
+        country: "China",
+        assets: 20
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "Some Guy",
+        twitter: "twitter.com",
+        country: "USA",
+        assets: 18
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "The Random Guy",
+        assets: 10
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "Rodrigo Borgues",
+        twitter: "twitter.com",
+        country: "Spain",
+        assets: 6
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "Fatima",
+        twitter: "twitter.com",
+        country: "Argentina",
+        assets: 6
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "Michael",
+        twitter: "twitter.com",
+        country: "Argentina",
+        assets: 6
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "David",
+        twitter: "twitter.com",
+        country: "Argentina",
+        assets: 6
+      },
+      {
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        name: "Lucy",
+        twitter: "twitter.com",
+        country: "Argentina",
+        assets: 6
+      }
+    ]
+
+  },
+
   moreDetails: [
-    {
-      title: "Patrons",
-      desc: "Mike Tobi Mike Tobi Mike Tobi Mike Tobi Mike Tobi",
-    },
     {
       title: "Creator",
       image: releaseImg,
@@ -58,6 +115,7 @@ const ArtBoardzDetailsPage = () => {
         location={DUMMY_DETAILS.location}
         links={DUMMY_DETAILS.links}
         artDesc={DUMMY_DETAILS.artDesc}
+        patrons={DUMMY_DETAILS.patrons}
         moreInfo={DUMMY_DETAILS.moreDetails}
       />
     </>
