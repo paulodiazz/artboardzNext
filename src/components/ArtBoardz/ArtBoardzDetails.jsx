@@ -54,11 +54,12 @@ const ArtBoardzDetails = ({
       {patrons.title && (
         <h2 className="text-2xl md:text-3xl font-medium pb-3">{patrons.title}</h2>
       )}
-      <div style={{ backgroundColor: '#011335' }}>
-        <div className="flex justify-between">
+      <div className="py-4" style={{ backgroundColor: '#011335' }}>
+        <div className="md:flex justify-between">
           {patrons.patron.slice(0, 4).map((info, index) => {
+            let first = (index + 4) % 4 === 0;
             return(
-                <div className="xs:w-full md:w-1/4" key={index}>
+                <div className={`xs:w-full md:w-1/4 my-2 ${first ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
                   <PatronsCard 
                     image={info.image}
                     name={info.name}
@@ -70,10 +71,11 @@ const ArtBoardzDetails = ({
             );
           })}
         </div>
-        <div className="flex justify-between" {...getCollapseProps()}>
+        <div className="md:flex justify-between" {...getCollapseProps()}>
           {patrons.patron.slice(4).map((info, index) => {
+            let first = (index + 4) % 4 === 0;
             return(
-                <div className="xs:w-full md:w-1/4" key={index}>
+                <div className={`xs:w-full md:w-1/4 my-2 ${first ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
                   <PatronsCard 
                     image={info.image}
                     name={info.name}
