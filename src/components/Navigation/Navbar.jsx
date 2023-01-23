@@ -1,9 +1,9 @@
 import React from "react";
 import customStyles from "../Layouts/Layout.module.css";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { Logo } from "../Layouts/Logo";
 import { useDispatch } from "react-redux";
-import { UIAction } from "../../store/redux-slices/UI-slice";
+import { UIAction } from "../../store.bck/redux-slices/UI-slice";
 import { SocialIcons } from "../Layouts/SocialIcons";
 
 const Navbar = () => {
@@ -29,24 +29,24 @@ const Navbar = () => {
 
       <ul className=" space-y-4">
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/home" className={activeNavLinkHandler}>
+          <Link href="/home" className={activeNavLinkHandler}>
             Home
-          </NavLink>
+          </Link>
         </li>
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/new-Releases" className={activeNavLinkHandler}>
+          <Link href="/new-Releases" className={activeNavLinkHandler}>
             New Releases
-          </NavLink>
+          </Link>
         </li>
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/artboardz" className={activeNavLinkHandler}>
+          <Link href="/artboardz" className={activeNavLinkHandler}>
             Artsboardz
-          </NavLink>
+          </Link>
         </li>
         <li onClick={toggleNavbarHandler}>
-          <NavLink to="/Leaderboardz" className={activeNavLinkHandler}>
+          <Link href="/Leaderboardz" className={activeNavLinkHandler}>
             Leaderboardz
-          </NavLink>
+          </Link>
         </li>
       </ul>
       <div className="hidden sm:flex mx-auto mt-auto w-fit">

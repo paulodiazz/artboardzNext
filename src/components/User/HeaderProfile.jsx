@@ -1,8 +1,8 @@
 import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import Avatar from "./Avatar";
-import profileImage from "../assests/images/ProfilePhoto.png";
-import { Link } from "react-router-dom";
+import profileImage from "../../../public/images/ProfilePhoto.png";
+import Link from "next/link";
 
 const HeaderProfile = () => {
   return (
